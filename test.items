@@ -1,0 +1,6 @@
+Group:Number lights "Ввімкнуто приладів [%d]"
+
+Switch ENTRANCE_LIGHT "Вхід/коридор" (lights) {mqtt="<[car:light/state:state:default], 
+					       >[car:light/command:command:ON:ON],
+					       >[car:light/command:command:OFF:OFF]", autoupdate="false"}
+Switch HALL_LIGHT "Вітальня світло" (lights) 
